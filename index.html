@@ -4,23 +4,13 @@
 <style>
   :root{--navy:#014C7E;--sky:#8FC7E8;--muted:#8E97A0;}
   *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',system-ui,Arial,sans-serif;}
-  body{background:#0e1318;color:#EAF2F9;padding:34px 0 70px;}
-  .head{max-width:1500px;margin:0 auto 26px;padding:0 24px;}
-  .head h1{font-size:30px;font-weight:900;letter-spacing:-.01em;} .head h1 .a{color:#1EA7F0;}
-  .head p{margin-top:7px;font-size:16px;font-weight:500;color:#9fb3c6;} .head p b{color:var(--sky);font-weight:700;}
-  .pagewrap{max-width:1500px;margin:0 auto 40px;padding:0 24px;}
-  .cap{display:flex;align-items:baseline;gap:14px;margin:0 0 12px;}
-  .cap .pg{background:var(--navy);color:#fff;font-weight:900;font-size:15px;border-radius:8px;padding:4px 12px;letter-spacing:.02em;}
-  .cap .t{font-size:20px;font-weight:800;color:#EAF2F9;}
-  .frame{position:relative;width:100%;aspect-ratio:16/9;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5);background:#0e1318;border:1px solid #1c2530;}
+  body{background:#0e1318;color:#EAF2F9;padding:24px 0 40px;}
+  .pagewrap{max-width:1600px;margin:0 auto 24px;padding:0 24px;}
+  .frame{position:relative;width:100%;aspect-ratio:16/9;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5);background:#0e1318;border:1px solid #1c2530;}
   .frame iframe{position:absolute;top:0;left:0;width:1920px;height:1080px;border:0;transform-origin:top left;}
 </style></head>
 <body>
-  <div class="head">
-    <h1>CoreSignal &middot; <span class="a">interactive deck</span></h1>
-    <p>All six pages, live. Click the tiles / points on pages 2&ndash;5 to drive them. <b>Prepared for Full Tilt Data.</b> One file &mdash; nothing else needed.</p>
-  </div>
-  <div class="pagewrap"><div class="cap"><span class="pg">PAGE 1</span><span class="t">Hero &mdash; your work, your tools, your AI, working as one</span></div>
+  <div class="pagewrap">
     <div class="frame ifr"><iframe srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;><meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;>
 <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
 <title>CoreSignal - page 1 (hero)</title>
@@ -121,7 +111,7 @@ window.addEventListener('resize',fit);fit();
 </script>
 </body></html>
 " scrolling="no"></iframe></div></div>
-  <div class="pagewrap"><div class="cap"><span class="pg">PAGE 2</span><span class="t">The command center &mdash; one window over everything you run (interactive)</span></div>
+  <div class="pagewrap">
     <div class="frame ifr"><iframe srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;>
 <title>CoreSignal Source Deck - slide 1 (Command Center, interactive)</title>
 <style>
@@ -249,7 +239,7 @@ window.addEventListener('resize',fit);fit();
 </script>
 </body></html>
 " scrolling="no"></iframe></div></div>
-  <div class="pagewrap"><div class="cap"><span class="pg">PAGE 3</span><span class="t">How it&#39;s built &mdash; the box, pulled apart (interactive)</span></div>
+  <div class="pagewrap">
     <div class="frame ifr"><iframe srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;>
 <title>CoreSignal Source Deck - slide 2 (How It's Built, interactive)</title>
 <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
@@ -375,7 +365,7 @@ window.addEventListener('resize',fit);fit();
 </script>
 </body></html>
 " scrolling="no"></iframe></div></div>
-  <div class="pagewrap"><div class="cap"><span class="pg">PAGE 4</span><span class="t">The leader package &mdash; click through the layers (interactive)</span></div>
+  <div class="pagewrap">
     <div class="frame ifr"><iframe srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;>
 <title>CoreSignal Source Deck - slide 3 (Leader Package, Layers, interactive)</title>
 <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
@@ -476,7 +466,7 @@ window.addEventListener('resize',fit);fit();
 </script>
 </body></html>
 " scrolling="no"></iframe></div></div>
-  <div class="pagewrap"><div class="cap"><span class="pg">PAGE 5</span><span class="t">The leader package &mdash; layer by layer (interactive)</span></div>
+  <div class="pagewrap">
     <div class="frame ifr"><iframe srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;>
 <title>CoreSignal Source Deck - The Leader Package (radial, layer-by-layer)</title>
 <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
@@ -644,7 +634,7 @@ window.addEventListener('resize',fit);fit();
 </script>
 </body></html>
 " scrolling="no"></iframe></div></div>
-  <div class="pagewrap"><div class="cap"><span class="pg">PAGE 6</span><span class="t">Close &mdash; book a 20-minute call</span></div>
+  <div class="pagewrap">
     <div class="frame ifr"><iframe srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;><meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;>
 <link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;>
 <title>CoreSignal - page 6 (CTA)</title>
