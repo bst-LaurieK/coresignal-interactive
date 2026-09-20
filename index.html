@@ -660,11 +660,13 @@ window.addEventListener('resize',fit);fit();
   h1 .hot{color:var(--amber);}
   h1 .pay{color:var(--sky);}
   p.lead{margin:28px 0 0;color:#EAF1F7;font-size:26px;line-height:1.42;max-width:748px;font-weight:500;text-shadow:0 2px 14px rgba(0,10,20,.5);}
-  .cta{margin-top:100px;display:inline-flex;align-items:center;gap:18px;background:#00A9FE;color:#fff;font-weight:800;font-size:28px;padding:22px 40px;border-radius:14px;box-shadow:0 14px 34px rgba(0,10,20,.4);}
+  .cta{margin-top:100px;display:inline-flex;align-items:center;gap:18px;background:#00A9FE;color:#fff;font-weight:800;font-size:28px;padding:22px 40px;border-radius:14px;box-shadow:0 14px 34px rgba(0,10,20,.4);text-decoration:none;cursor:pointer;transition:background .15s,transform .15s;}
+  .cta:hover{background:#1CB6FF;transform:translateY(-2px);}
   .cta svg{width:30px;height:30px;} .cta svg .st{stroke:#fff;stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round;}
   .contact{margin-top:34px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;color:#DCE7F0;font-size:23px;font-weight:600;}
   .contact .who{color:#fff;font-weight:800;font-size:27px;}
-  .contact .line{display:flex;align-items:center;gap:12px;}
+  .contact .line{display:flex;align-items:center;gap:12px;color:#DCE7F0;text-decoration:none;}
+  .contact a.line:hover{color:#fff;text-decoration:underline;}
   .contact .line svg{width:22px;height:22px;} .contact .line svg .st{stroke:var(--sky);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
   #fit{position:absolute;inset:0;} .stage{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1920px;height:1080px;}
   .nav{position:absolute;top:54%;transform:translateY(-50%);z-index:9;width:54px;height:54px;border-radius:50%;border:none;background:rgba(255,255,255,.14);box-shadow:0 6px 18px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;}
@@ -680,11 +682,11 @@ window.addEventListener('resize',fit);fit();
     <div class=&quot;eyebrow&quot;>Your next step</div>
     <h1>See CoreSignal<br><span class=&quot;hot&quot;>run</span> on<br><span class=&quot;pay&quot;>your own work.</span></h1>
     <p class=&quot;lead&quot;>No rip and replace. Give us your stack and we&amp;#39;ll stand up a command center that reads across everything you run, acts on your real work, and keeps you three moves ahead.</p>
-    <div class=&quot;cta&quot;><svg viewBox=&quot;0 0 24 24&quot;><path class=&quot;st&quot; d=&quot;M5 12h13&quot;/><path class=&quot;st&quot; d=&quot;M13 6l6 6-6 6&quot;/></svg>Book a 20-minute call</div>
+    <a class=&quot;cta&quot; href=&quot;https://app.onecal.io/b/mkuphal/BlueSignal-get-started-discussion&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;><svg viewBox=&quot;0 0 24 24&quot;><path class=&quot;st&quot; d=&quot;M5 12h13&quot;/><path class=&quot;st&quot; d=&quot;M13 6l6 6-6 6&quot;/></svg>Book a 20-minute call</a>
     <div class=&quot;contact&quot;>
       <span class=&quot;who&quot;>Mike Kuphal &amp;nbsp;&amp;middot;&amp;nbsp; Blue Signal</span>
-      <span class=&quot;line&quot;><svg viewBox=&quot;0 0 24 24&quot;><rect class=&quot;st&quot; x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><path class=&quot;st&quot; d=&quot;M3 7l9 6 9-6&quot;/></svg>Mike@bluesignaltech.com</span>
-      <span class=&quot;line&quot;><svg viewBox=&quot;0 0 24 24&quot;><circle class=&quot;st&quot; cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><path class=&quot;st&quot; d=&quot;M3.5 12h17&quot;/><path class=&quot;st&quot; d=&quot;M12 3.5c2.5 2.4 3.8 5.4 3.8 8.5S14.5 18.1 12 20.5C9.5 18.1 8.2 15.1 8.2 12S9.5 5.9 12 3.5z&quot;/></svg>bluesignaltech.com</span>
+      <a class=&quot;line&quot; href=&quot;mailto:Mike@bluesignaltech.com&quot;><svg viewBox=&quot;0 0 24 24&quot;><rect class=&quot;st&quot; x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><path class=&quot;st&quot; d=&quot;M3 7l9 6 9-6&quot;/></svg>Mike@bluesignaltech.com</a>
+      <a class=&quot;line&quot; href=&quot;https://www.bluesignaltech.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;><svg viewBox=&quot;0 0 24 24&quot;><circle class=&quot;st&quot; cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><path class=&quot;st&quot; d=&quot;M3.5 12h17&quot;/><path class=&quot;st&quot; d=&quot;M12 3.5c2.5 2.4 3.8 5.4 3.8 8.5S14.5 18.1 12 20.5C9.5 18.1 8.2 15.1 8.2 12S9.5 5.9 12 3.5z&quot;/></svg>bluesignaltech.com</a>
     </div>
   </div>
   <button class=&quot;nav prev&quot; id=&quot;prev&quot; aria-label=&quot;Previous&quot;><svg viewBox=&quot;0 0 24 24&quot;><path d=&quot;M15 4.5l-8 7.5 8 7.5&quot;/></svg></button>
