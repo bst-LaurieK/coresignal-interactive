@@ -359,6 +359,24 @@ document.addEventListener('keydown',function(e){
   else if(e.key==='ArrowLeft'){e.preventDefault();gotoSlide(SLIDE-1);}
   else if(e.key===' '){e.preventDefault(); advance();}
 });
+// ForgedSignal gem emblem drops into the ForgedSignal box's icon tile (replaces the brain glyph), white disc so the gem reads, centered with space around it
+(function(){
+  var cx=81, cy=371, r=37; // native center + radius
+  var box=document.createElement('div'); box.style.cssText='position:absolute;z-index:4;';
+  box.style.left=px(cx-r); box.style.top=px(cy-r); box.style.width=px(2*r); box.style.height=px(2*r);
+  box.innerHTML='<svg viewBox=&quot;0 0 100 100&quot; style=&quot;width:100%;height:100%;display:block&quot;>'+
+   '<circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;#FFFFFF&quot; stroke=&quot;#183C63&quot; stroke-width=&quot;4&quot;/>'+
+   '<g stroke=&quot;#0E2A4E&quot; stroke-width=&quot;0.9&quot; stroke-linejoin=&quot;round&quot;>'+
+   '<polygon points=&quot;50,23 73.38,36.5 57.79,45.5 50,41&quot; fill=&quot;#3FAEEA&quot;/>'+
+   '<polygon points=&quot;73.38,36.5 73.38,63.5 57.79,54.5 57.79,45.5&quot; fill=&quot;#2E7CBB&quot;/>'+
+   '<polygon points=&quot;73.38,63.5 50,77 50,59 57.79,54.5&quot; fill=&quot;#12579E&quot;/>'+
+   '<polygon points=&quot;50,77 26.62,63.5 42.21,54.5 50,59&quot; fill=&quot;#16609C&quot;/>'+
+   '<polygon points=&quot;26.62,63.5 26.62,36.5 42.21,45.5 42.21,54.5&quot; fill=&quot;#2E7CBB&quot;/>'+
+   '<polygon points=&quot;26.62,36.5 50,23 50,41 42.21,45.5&quot; fill=&quot;#5CC4F5&quot;/>'+
+   '<polygon points=&quot;50,41 57.79,45.5 57.79,54.5 50,59 42.21,54.5 42.21,45.5&quot; fill=&quot;#7CD0F7&quot;/>'+
+   '</g></svg>';
+  art0.appendChild(box);
+})();
 showStage(0);   // open on CoreSignal + its grouped &quot;What You Get&quot; lines
 function fit(){var k=Math.min(window.innerWidth/1920,window.innerHeight/1080);document.querySelector('.stage').style.transform='translate(-50%,-50%) scale('+k+')';}
 window.addEventListener('resize',fit);fit();
