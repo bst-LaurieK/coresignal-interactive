@@ -377,6 +377,22 @@ document.addEventListener('keydown',function(e){
    '</g></svg>';
   art0.appendChild(box);
 })();
+// TrueSignal database emblem drops into the TrueSignal box's icon tile (same size/treatment as ForgedSignal, middle box)
+(function(){
+  var cx=379, cy=371, r=37; // native center + radius, TrueSignal (middle) box icon tile
+  var box=document.createElement('div'); box.style.cssText='position:absolute;z-index:4;';
+  box.style.left=px(cx-r); box.style.top=px(cy-r); box.style.width=px(2*r); box.style.height=px(2*r);
+  box.innerHTML='<svg viewBox=&quot;0 0 100 100&quot; style=&quot;width:100%;height:100%;display:block&quot;>'+
+   '<defs><linearGradient id=&quot;tsdb&quot; x1=&quot;0&quot; y1=&quot;0&quot; x2=&quot;0&quot; y2=&quot;1&quot;><stop offset=&quot;0&quot; stop-color=&quot;#2E90E8&quot;/><stop offset=&quot;1&quot; stop-color=&quot;#12579E&quot;/></linearGradient></defs>'+
+   '<circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;42&quot; fill=&quot;#FFFFFF&quot; stroke=&quot;#183C63&quot; stroke-width=&quot;4&quot;/>'+
+   '<path d=&quot;M34,36 V64 A16,5 0 0 0 66,64 V36 Z&quot; fill=&quot;url(#tsdb)&quot; stroke=&quot;#0E2A4E&quot; stroke-width=&quot;1.2&quot;/>'+
+   '<ellipse cx=&quot;50&quot; cy=&quot;36&quot; rx=&quot;16&quot; ry=&quot;5&quot; fill=&quot;#5CC4F5&quot; stroke=&quot;#0E2A4E&quot; stroke-width=&quot;1.2&quot;/>'+
+   '<path d=&quot;M34,46 A16,5 0 0 0 66,46&quot; fill=&quot;none&quot; stroke=&quot;#0E2A4E&quot; stroke-width=&quot;1.2&quot; opacity=&quot;0.8&quot;/>'+
+   '<path d=&quot;M34,55 A16,5 0 0 0 66,55&quot; fill=&quot;none&quot; stroke=&quot;#0E2A4E&quot; stroke-width=&quot;1.2&quot; opacity=&quot;0.8&quot;/>'+
+   '<g fill=&quot;#EAF7FF&quot;><circle cx=&quot;60&quot; cy=&quot;42.5&quot; r=&quot;1.6&quot;/><circle cx=&quot;60&quot; cy=&quot;51.5&quot; r=&quot;1.6&quot;/><circle cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;1.6&quot;/></g>'+
+   '</svg>';
+  art0.appendChild(box);
+})();
 showStage(0);   // open on CoreSignal + its grouped &quot;What You Get&quot; lines
 function fit(){var k=Math.min(window.innerWidth/1920,window.innerHeight/1080);document.querySelector('.stage').style.transform='translate(-50%,-50%) scale('+k+')';}
 window.addEventListener('resize',fit);fit();
